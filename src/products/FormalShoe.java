@@ -20,7 +20,7 @@ public class FormalShoe extends Shoe {
 
     @Override
     public String toString() {
-        return "\nFormalShoe " + getName() + " {" +
+        return "\n#FormalShoe " + getName() + " {" +
                 ", type: " + type +
                 '}' + "\nthe price is: " + getPrice() + ", stock number: ";
     }

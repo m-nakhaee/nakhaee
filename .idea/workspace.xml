@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91fcffc6-0bfa-48bd-80c3-df32b2f8af59" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/FormalShoes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/ReadableStuffs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/Shoes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/SportShoes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/products/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/products/FormalShoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/FormalShoe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/products/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Magazine.java" afterDir="false" />
@@ -41,11 +38,12 @@
       <file leaf-file-name="Store.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Store.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createProducts#0;class#Store#0" />
+                <element signature="method#createElectrical#0;class#Store#0" />
                 <element signature="method#createShoes#0;class#Store#0" />
                 <element signature="method#createReadableStuffs#0;class#Store#0" />
               </folding>
@@ -53,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="121" column="53" lean-forward="true" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
+            <state relative-caret-position="148">
+              <caret line="121" column="42" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#register#0;class#Main#0" />
@@ -67,8 +65,6 @@
                 <element signature="method#getFirstName#1;class#Main#0" />
                 <element signature="method#getPhoneNumber#0;class#Main#0" />
                 <element signature="method#isNumber#0;class#Main#0" />
-                <element signature="e#3958#3959#0" expanded="true" />
-                <element signature="e#4018#4019#0" expanded="true" />
                 <element signature="method#getOrder#0;class#Main#0" />
               </folding>
             </state>
@@ -79,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/products/Book.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -87,8 +83,8 @@
       <file leaf-file-name="FormalShoe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/products/FormalShoe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+            <state relative-caret-position="255">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -96,8 +92,8 @@
       <file leaf-file-name="Magazine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/products/Magazine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+            <state relative-caret-position="240">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -105,8 +101,8 @@
       <file leaf-file-name="Radio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/products/Radio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="35" column="79" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
+            <state relative-caret-position="237">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -114,8 +110,8 @@
       <file leaf-file-name="SportShoe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/products/SportShoe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="291">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding>
                 <element signature="e#126#127#0" expanded="true" />
                 <element signature="e#158#159#0" expanded="true" />
@@ -124,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TV.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TV.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/products/TV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="35" column="74" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="74" />
+            <state relative-caret-position="241">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -358,12 +354,12 @@
       <workItem from="1587191576060" duration="928000" />
       <workItem from="1587375157832" duration="8383000" />
       <workItem from="1587454533186" duration="2319000" />
-      <workItem from="1587464084434" duration="6529000" />
+      <workItem from="1587464084434" duration="7114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29060000" />
+    <option name="totallyTimeSpent" value="29645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -378,7 +374,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32861635" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2437107" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -427,6 +423,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createProducts#0;class#Store#0" />
+            <element signature="method#createElectrical#0;class#Store#0" />
             <element signature="method#createShoes#0;class#Store#0" />
             <element signature="method#createReadableStuffs#0;class#Store#0" />
           </folding>
@@ -503,6 +500,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createProducts#0;class#Store#0" />
+            <element signature="method#createElectrical#0;class#Store#0" />
             <element signature="method#createShoes#0;class#Store#0" />
             <element signature="method#createReadableStuffs#0;class#Store#0" />
           </folding>
@@ -732,33 +730,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="121" column="53" lean-forward="true" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#register#0;class#Main#0" />
-            <element signature="method#finishRegister#0;class#Main#0" />
-            <element signature="method#regCanceled#0;class#Main#0" />
-            <element signature="method#getFirstName#0;class#Main#0" />
-            <element signature="method#getFirstName#1;class#Main#0" />
-            <element signature="method#getPhoneNumber#0;class#Main#0" />
-            <element signature="method#isNumber#0;class#Main#0" />
-            <element signature="e#3958#3959#0" expanded="true" />
-            <element signature="e#4018#4019#0" expanded="true" />
-            <element signature="method#getOrder#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Store.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        <state relative-caret-position="240">
+          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createProducts#0;class#Store#0" />
+            <element signature="method#createElectrical#0;class#Store#0" />
             <element signature="method#createShoes#0;class#Store#0" />
             <element signature="method#createReadableStuffs#0;class#Store#0" />
           </folding>
@@ -768,35 +747,35 @@
     <entry file="file://$PROJECT_DIR$/src/products/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/products/FormalShoe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+        <state relative-caret-position="255">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/products/Magazine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
+        <state relative-caret-position="240">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/products/Radio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="35" column="79" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
+        <state relative-caret-position="237">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/products/SportShoe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="291">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
             <element signature="e#126#127#0" expanded="true" />
             <element signature="e#158#159#0" expanded="true" />
@@ -806,8 +785,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/products/TV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="35" column="74" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="74" />
+        <state relative-caret-position="241">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="121" column="42" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#register#0;class#Main#0" />
+            <element signature="method#finishRegister#0;class#Main#0" />
+            <element signature="method#regCanceled#0;class#Main#0" />
+            <element signature="method#getFirstName#0;class#Main#0" />
+            <element signature="method#getFirstName#1;class#Main#0" />
+            <element signature="method#getPhoneNumber#0;class#Main#0" />
+            <element signature="method#isNumber#0;class#Main#0" />
+            <element signature="method#getOrder#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>

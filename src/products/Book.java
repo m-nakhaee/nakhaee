@@ -21,7 +21,7 @@ public class Book extends ReadableStuff {
     @Override
     public String toString() {
         this.getDetails();
-        return "\n+ Book{" + "title: " + getName() +
+        return "\n+ #Book{" + "title: " + getName() +
                 ", writer: " + writer +
                 '}' + "\nthe price is: " + getPrice() + ", stock number: ";
     }

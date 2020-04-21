@@ -119,7 +119,15 @@ public class Main {  //ask what exactly is the difference between static paramet
     }
 
     private static void showProducts() {
+        System.out.println("**************");
+        System.out.println("ELECTRICAL PRODUCTS:");
         System.out.println(store.getElectricalMap());
+        System.out.println("**************");
+        System.out.println("SHOES:");
+        System.out.println(store.getShoesMap());
+        System.out.println("**************");
+        System.out.println("READABLE STUFFS:");
+        System.out.println(store.getReadableMap());
     }
 
     private static void getOrder() {

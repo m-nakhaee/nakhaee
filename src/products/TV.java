@@ -4,6 +4,9 @@ public class TV extends Electrical {
     private int inch;
     private TVType type;
 
+    public TV() {
+    }
+
     public TV(int inch, TVType type) {
         this.inch = inch;
         this.type = type;
@@ -23,5 +26,13 @@ public class TV extends Electrical {
 
     public void setType(TVType type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "TV " + getName() + " {" +
+                "inch: " + inch +
+                ", type: " + type +
+                '}' + "\ntye price is: " + getPrice();
     }
 }

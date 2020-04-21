@@ -1,6 +1,6 @@
 package products;
 
-public class ReadableStuffs extends Product {
+public class ReadableStuff extends Product {
     private String publisherName;
     private int publisherNumber;
 
@@ -18,5 +18,10 @@ public class ReadableStuffs extends Product {
 
     public void setPublisherNumber(int publisherNumber) {
         this.publisherNumber = publisherNumber;
+    }
+
+    @Override
+    public String getDetails() {
+        return "publisherName: " + publisherName + ", publisherNumber: " + publisherNumber;
     }
 }

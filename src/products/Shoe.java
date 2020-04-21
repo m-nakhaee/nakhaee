@@ -1,6 +1,6 @@
 package products;
 
-public class Shoes extends Product {
+public class Shoe extends Product {
     private int size;
     private Gender gender;
 
@@ -18,5 +18,10 @@ public class Shoes extends Product {
 
     public void setGender(Gender gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String getDetails() {
+        return "size: " + size + ", gender: " + gender;
     }
 }

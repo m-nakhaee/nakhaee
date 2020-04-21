@@ -1,6 +1,6 @@
 package products;
 
-public class Product {
+public abstract class Product {
     private double price;
     private String name;
 
@@ -19,4 +19,6 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
+
+    public abstract String getDetails();
 }

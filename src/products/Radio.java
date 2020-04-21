@@ -4,6 +4,9 @@ public class Radio extends Electrical {
     private int antennaPower;
     private RadioType type;
 
+    public Radio() {
+    }
+
     public Radio(int antennaPower, RadioType type) {
         this.antennaPower = antennaPower;
         this.type = type;
@@ -23,5 +26,13 @@ public class Radio extends Electrical {
 
     public void setType(RadioType type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Radio "+ getName()+ " {" +
+                "antennaPower=" + antennaPower +
+                ", type=" + type +
+                '}' + "\nthe price is: " + this.getPrice();
     }
 }

@@ -19,4 +19,9 @@ public class Electrical extends Product {
     public void setVoltage(int voltage) {
         this.voltage = voltage;
     }
+
+    @Override
+    public String getDetails() {
+            return "wat: " + wat + ", voltage: " + voltage;
+    }
 }

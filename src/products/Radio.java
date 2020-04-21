@@ -30,9 +30,9 @@ public class Radio extends Electrical {
 
     @Override
     public String toString() {
-        return "Radio "+ getName()+ " {" +
-                "antennaPower=" + antennaPower +
-                ", type=" + type +
-                '}' + "\nthe price is: " + this.getPrice();
+        return "\nRadio "+ getName()+ " {" +
+                "antennaPower: " + antennaPower +
+                ", type: " + type +
+                '}' + "\nthe price is: " + this.getPrice() + ", stock number: ";
     }
 }

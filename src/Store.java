@@ -39,24 +39,30 @@ public class Store {
     private void createElectrical() {
         Radio radio1 = new Radio(4, RadioType.Analog);
         radio1.setPrice(100.34);
+        radio1.setName("Taha");
         electricalMap.put(radio1, 3);
         Radio radio2 = new Radio(20, RadioType.Digital);
         radio2.setPrice(1020);
+        radio2.setName("Bahram");
         electricalMap.put(radio2, 10);
         TV tv = new TV(42, TVType.Curve);
         tv.setPrice(5000);
+        tv.setName("Wow");
         electricalMap.put(tv, 5);
     }
 
     private void createShoes() {
         SportShoe sportShoes = new SportShoe(SportType.Climbing);
         sportShoes.setPrice(200);
+        sportShoes.setName("tanTAk");
         shoesMap.put(sportShoes, 10);
         FormalShoe formalShoes = new FormalShoe(FormalType.HighHeel);
         formalShoes.setPrice(230.12);
+        formalShoes.setName("Milad");
         shoesMap.put(formalShoes, 10);
         FormalShoe formalShoes1 = new FormalShoe(FormalType.HighHeel);
         formalShoes1.setPrice(200);
+        formalShoes1.setName("Orkide");
         shoesMap.put(formalShoes1, 12);
     }
 

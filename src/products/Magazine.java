@@ -30,9 +30,9 @@ public class Magazine extends ReadableStuff {
 
     @Override
     public String toString() {
-        return "Magazine{" + "title: " + getName() +
+        return "\nMagazine{" + "title: " + getName() +
                 ", concessionaire: " + concessionaire +
                 ", type: " + type +
-                '}' + "\nthe price is: " + getPrice();
+                '}' + "\nthe price is: " + getPrice() + ", stock number: ";
     }
 }

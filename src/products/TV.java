@@ -30,9 +30,9 @@ public class TV extends Electrical {
 
     @Override
     public String toString() {
-        return "TV " + getName() + " {" +
+        return "\nTV " + getName() + " {" +
                 "inch: " + inch +
                 ", type: " + type +
-                '}' + "\ntye price is: " + getPrice();
+                '}' + "\ntye price is: " + getPrice() + ", stock number: ";
     }
 }

@@ -11,16 +11,20 @@ public class User {
     private String email;
     private String address; //TODO : rewrite it by Address class
     private Product[] productList;
+    private String userName;
+    private String password;
 
     public User() {
     }
 
-    public User(String firstName, String lastName, int phoneNumber, String email, String address) {
+    public User(String firstName, String lastName, int phoneNumber, String email, String address, String userName, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.address = address;
+        this.userName = userName;
+        this.password = password;
     }
 
     public String getFirstName() {
@@ -61,6 +65,22 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     private void addProduct(){

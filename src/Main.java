@@ -1,3 +1,4 @@
+import dao.UserDao;
 import dto.User;
 
 import java.util.HashMap;
@@ -6,11 +7,13 @@ import java.util.Scanner;
 
 public class Main {  //ask what exactly is the difference between static parameters and dynamics
     static Scanner scanner = new Scanner(System.in);
-    static Map<String, String> usernamePassMap = new HashMap<>();
-    static Map<String, User> usernameUserMap = new HashMap<>();
+//    static Map<String, String> usernamePassMap = new HashMap<>();
+//    static Map<String, User> usernameUserMap = new HashMap<>();
     static Store store = Store.getInstance();
+    static UserDao userDao = UserDao.getInstance();
 
     public static void main(String[] args) {
+        //TODO: get users information from DB
         String userName = register();
         if (userName != null) {
             showProducts();
@@ -32,11 +35,12 @@ public class Main {  //ask what exactly is the difference between static paramet
     private static String finishRegister(String firstName, String lastName,
                                          int phoneNumber, String email, String address) {
         if (regCanceled()) return null;
-        User user = new User(firstName, lastName, phoneNumber, email, address);
         String userName = getUserName();
         String password = getPassword();
-        usernamePassMap.put(userName, password);
-        usernameUserMap.put(userName, user);
+        User user = new User(firstName, lastName, phoneNumber, email, address, userName, password);
+//        usernamePassMap.put(userName, password);
+//        usernameUserMap.put(userName, user);
+        userDao.insertUser(user);
         return userName;
     }
 
@@ -71,11 +75,13 @@ public class Main {  //ask what exactly is the difference between static paramet
     private static String getUserName() { //how can we throw and handle an exception without interrupting???
         System.out.println("please enter a user name:");
         String username = scanner.nextLine();
-        String availablePass = usernamePassMap.get(username);
-        while (availablePass != null || username.length() == 0) {
+        User availableUser = userDao.search(username);
+//        String availablePass = usernamePassMap.get(username);
+        while (availableUser != null || username.length() == 0) {
             System.out.println("sorry! this user name is not valid!\nenter another user name pleas:");
             username = scanner.nextLine();
-            availablePass = usernamePassMap.get(username);
+            availableUser = userDao.search(username);
+//            availablePass = usernamePassMap.get(username);
         }
         return username;
     }

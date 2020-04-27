@@ -33,6 +33,6 @@ public class TV extends Electrical {
         return "\n#TV " + getName() + " {" +
                 "inch: " + inch +
                 ", type: " + type +
-                '}' + "\ntye price is: " + getPrice() + ", stock number: ";
+                '}' + "\ntye price is: " + getPrice() + ", number: ";
     }
 }

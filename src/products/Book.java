@@ -23,7 +23,7 @@ public class Book extends ReadableStuff {
         this.getDetails();
         return "\n+ #Book{" + "title: " + getName() +
                 ", writer: " + writer +
-                '}' + "\nthe price is: " + getPrice() + ", stock number: ";
+                '}' + "\nthe price is: " + getPrice() + ", number: ";
     }
 
 

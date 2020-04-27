@@ -22,6 +22,6 @@ public class SportShoe extends Shoe {
     public String toString() {
         return "\n#SportShoe " + getName() + " {" +
                 "type: " + type +
-                '}' +"\nthe price is: " + getPrice() + ", stock number: ";
+                '}' +"\nthe price is: " + getPrice() + ", number: ";
     }
 }

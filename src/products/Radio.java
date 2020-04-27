@@ -33,6 +33,6 @@ public class Radio extends Electrical {
         return "\n#Radio "+ getName()+ " {" +
                 "antennaPower: " + antennaPower +
                 ", type: " + type +
-                '}' + "\nthe price is: " + this.getPrice() + ", stock number: ";
+                '}' + "\nthe price is: " + this.getPrice() + ", number: ";
     }
 }

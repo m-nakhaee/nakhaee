@@ -33,6 +33,6 @@ public class Magazine extends ReadableStuff {
         return "\n#Magazine{" + "title: " + getName() +
                 ", concessionaire: " + concessionaire +
                 ", type: " + type +
-                '}' + "\nthe price is: " + getPrice() + ", stock number: ";
+                '}' + "\nthe price is: " + getPrice() + ", number: ";
     }
 }

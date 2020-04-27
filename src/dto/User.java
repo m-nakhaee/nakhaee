@@ -2,7 +2,9 @@ package dto;
 
 import products.Product;
 
-import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class User {
     private String firstName;
@@ -10,7 +12,7 @@ public class User {
     private int phoneNumber;
     private String email;
     private String address; //TODO : rewrite it by Address class
-    private Product[] productList;
+    private Map<Product, Integer> cart = new HashMap<>();
     private String userName;
     private String password;
 
@@ -83,13 +85,34 @@ public class User {
         this.password = password;
     }
 
-    private void addProduct(){
+    public Map<Product, Integer> getCart() {
+        return cart;
+    }
 
+    public void addProduct(Product product) {
+        Integer number = cart.get(product);
+        if (number != null)
+            cart.put(product, number + 1);
+        else if (product != null) cart.put(product, 1);
+        System.out.println(cart);
     }
-    private void removeProduct(){
 
+    public void removeProduct(Product product) {
+        System.out.println(cart);
+        Integer number = cart.get(product);
+        if (number != null)
+            if (number == 1) cart.remove(product);
+            else cart.put(product, number - 1);
+        System.out.println(cart);
     }
-    private void finalConfirm(){{
+
+    public void purchase() {
+        //TODO
+        emptyCart();
     }
+
+    private void emptyCart() {
+        for (int i = 0; i < cart.size(); i++)
+            cart.remove(i);
     }
 }

@@ -4,7 +4,6 @@ import products.Product;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class User {
     private String firstName;
@@ -109,6 +108,8 @@ public class User {
     public void purchase() {
         //TODO
         emptyCart();
+        System.out.println("purchasing is completed");
+        System.out.println("the cart is empty now!");
     }
 
     private void emptyCart() {

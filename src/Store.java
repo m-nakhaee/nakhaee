@@ -14,11 +14,13 @@ public class Store {
         createProducts();
     }
 
-    public static Store getInstance(){
+    public static Store getInstance() {
         return singleToneInstance;
     }
 
-    public Map<Integer, Product> getCodeProductMap() {return codeProductMap;}
+    public Map<Integer, Product> getCodeProductMap() {
+        return codeProductMap;
+    }
 
     public Map<Electrical, Integer> getElectricalMap() {
         return electricalMap;
@@ -111,5 +113,24 @@ public class Store {
         magazine2.setCode(24);
         codeProductMap.put(magazine2.getCode(), magazine2);
         readableMap.put(magazine2, 32);
+    }
+
+    public void updateStock(Map<Product, Integer> userOrder) {
+        for (Map.Entry<Product, Integer> userOrderEntry : userOrder.entrySet()) {
+            updateEntry(electricalMap, userOrderEntry);
+            updateEntry(shoesMap, userOrderEntry);
+            updateEntry(readableMap, userOrderEntry);
+        }
+        System.out.println("stock updated");
+    }
+
+    private void updateEntry(Map ProductMap, Map.Entry<Product, Integer> userOrderEntry) {
+        Product product = userOrderEntry.getKey();
+        Integer orderNumber = userOrderEntry.getValue();
+        Integer stockNumber = (Integer)ProductMap.get(product);
+        if (stockNumber != null) {
+            ProductMap.remove(product);
+            if (stockNumber - orderNumber != 0) ProductMap.put(product, stockNumber - orderNumber);
+        }
     }
 }

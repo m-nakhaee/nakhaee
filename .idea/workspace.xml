@@ -3,26 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="91fcffc6-0bfa-48bd-80c3-df32b2f8af59" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dto/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/products/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/FormalShoe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/products/FormalShoe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/Magazine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/products/Magazine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/products/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/Radio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/products/Radio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/SportShoe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/products/SportShoe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/products/TV.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/products/TV.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/FormalShoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/FormalShoe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Magazine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Radio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/SportShoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/SportShoe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/products/TV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/TV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/StockNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNumberException.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,10 +21,16 @@
       <file leaf-file-name="Store.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Store.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+            <state relative-caret-position="93">
+              <caret line="127" column="50" lean-forward="true" selection-start-line="127" selection-start-column="50" selection-end-line="127" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
                 <element signature="method#createProducts#0;class#Store#0" />
               </folding>
             </state>
@@ -50,11 +40,28 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="181" column="8" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
+            <state relative-caret-position="435">
+              <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getEnterCommand#0;class#Main#0" />
+                <element signature="method#register#0;class#Main#0" />
+                <element signature="method#getUserNameAndPassword#0;class#Main#0" />
+                <element signature="method#regCanceled#0;class#Main#0" />
+                <element signature="method#getFirstName#0;class#Main#0" />
+                <element signature="method#getLastName#0;class#Main#0" />
+                <element signature="method#getUserName#0;class#Main#0" />
+                <element signature="method#getPassword#0;class#Main#0" />
+                <element signature="method#getAddress#0;class#Main#0" />
+                <element signature="method#getPhoneNumber#0;class#Main#0" />
+                <element signature="method#getEmail#0;class#Main#0" />
+                <element signature="method#isNumber#0;class#Main#0" />
                 <element signature="method#showProducts#0;class#Main#0" />
+                <element signature="method#getOrder#0;class#Main#0" />
+                <element signature="method#finalizePurchase#0;class#Main#0" />
+                <element signature="method#checkStock#0;class#Main#0" />
+                <element signature="method#isNumberOfStockOK#0;class#Main#0" />
+                <element signature="method#PrintTotalCost#0;class#Main#0" />
                 <element signature="method#removeProduct#0;class#Main#0" />
                 <element signature="method#addProduct#0;class#Main#0" />
                 <element signature="method#showPurchasingCommands#0;class#Main#0" />
@@ -64,15 +71,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="StockNumberException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/exception/StockNumberException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+              <folding>
+                <element signature="e#151#152#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dto/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+            <state>
+              <caret lean-forward="true" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addProduct#0;class#User#0" />
                 <element signature="method#removeProduct#0;class#User#0" />
+                <element signature="method#purchase#0;class#User#0" />
                 <element signature="method#emptyCart#0;class#User#0" />
               </folding>
             </state>
@@ -138,8 +158,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -147,6 +167,7 @@
     <findStrings>
       <find>isNumber</find>
       <find>Entry</find>
+      <find>store</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,14 +208,15 @@
         <option value="$PROJECT_DIR$/src/products/SportShoes.java" />
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/products/Product.java" />
-        <option value="$PROJECT_DIR$/src/Store.java" />
         <option value="$PROJECT_DIR$/src/products/Book.java" />
         <option value="$PROJECT_DIR$/src/products/FormalShoe.java" />
         <option value="$PROJECT_DIR$/src/products/Magazine.java" />
         <option value="$PROJECT_DIR$/src/products/Radio.java" />
         <option value="$PROJECT_DIR$/src/products/SportShoe.java" />
         <option value="$PROJECT_DIR$/src/products/TV.java" />
+        <option value="$PROJECT_DIR$/src/exception/StockNumberException.java" />
         <option value="$PROJECT_DIR$/src/dto/User.java" />
+        <option value="$PROJECT_DIR$/src/Store.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -219,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,7 +258,19 @@
               <item name="online shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="online shop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="online shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="online shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="online shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="online shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="online shop" type="b2602c69:ProjectViewProjectNode" />
@@ -245,9 +280,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,18 +383,19 @@
       <workItem from="1587883613405" duration="1998000" />
       <workItem from="1587891675961" duration="12187000" />
       <workItem from="1587910564172" duration="8101000" />
+      <workItem from="1587983069802" duration="6358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56876000" />
+    <option name="totallyTimeSpent" value="63234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32861635" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -368,11 +403,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6446541" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3773585" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22986823" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22986823" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -386,7 +421,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32861635" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32861635" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,19 +430,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/products/SportType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Store.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
             <element signature="method#createProducts#0;class#Store#0" />
           </folding>
         </state>
@@ -483,6 +516,12 @@
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
             <element signature="method#createProducts#0;class#Store#0" />
           </folding>
         </state>
@@ -710,30 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Store.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createProducts#0;class#Store#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dto/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addProduct#0;class#User#0" />
-            <element signature="method#removeProduct#0;class#User#0" />
-            <element signature="method#emptyCart#0;class#User#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../HW12/src/question2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -741,13 +756,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/exception/StockNumberException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="181" column="8" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
+        <state relative-caret-position="60">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dto/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#addProduct#0;class#User#0" />
+            <element signature="method#removeProduct#0;class#User#0" />
+            <element signature="method#purchase#0;class#User#0" />
+            <element signature="method#emptyCart#0;class#User#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="127" column="50" lean-forward="true" selection-start-line="127" selection-start-column="50" selection-end-line="127" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="method#createProducts#0;class#Store#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getEnterCommand#0;class#Main#0" />
+            <element signature="method#register#0;class#Main#0" />
+            <element signature="method#getUserNameAndPassword#0;class#Main#0" />
+            <element signature="method#regCanceled#0;class#Main#0" />
+            <element signature="method#getFirstName#0;class#Main#0" />
+            <element signature="method#getLastName#0;class#Main#0" />
+            <element signature="method#getUserName#0;class#Main#0" />
+            <element signature="method#getPassword#0;class#Main#0" />
+            <element signature="method#getAddress#0;class#Main#0" />
+            <element signature="method#getPhoneNumber#0;class#Main#0" />
+            <element signature="method#getEmail#0;class#Main#0" />
+            <element signature="method#isNumber#0;class#Main#0" />
             <element signature="method#showProducts#0;class#Main#0" />
+            <element signature="method#getOrder#0;class#Main#0" />
+            <element signature="method#finalizePurchase#0;class#Main#0" />
+            <element signature="method#checkStock#0;class#Main#0" />
+            <element signature="method#isNumberOfStockOK#0;class#Main#0" />
+            <element signature="method#PrintTotalCost#0;class#Main#0" />
             <element signature="method#removeProduct#0;class#Main#0" />
             <element signature="method#addProduct#0;class#Main#0" />
             <element signature="method#showPurchasingCommands#0;class#Main#0" />

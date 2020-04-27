@@ -1,26 +1,31 @@
 import dao.UserDao;
 import dto.User;
+import exception.StockNumberException;
+import products.Electrical;
 import products.Product;
+import products.ReadableStuff;
+import products.Shoe;
 
 import javax.swing.text.html.HTMLDocument;
 import java.util.*;
 
-public class Main {  //ask what exactly is the difference between static parameters and dynamics
+public class Main {
     static Scanner scanner = new Scanner(System.in);
-    //    static Map<String, String> usernamePassMap = new HashMap<>();
-//    static Map<String, User> usernameUserMap = new HashMap<>();
     static Store store = Store.getInstance();
+    static Map<Electrical, Integer> electricalMap = store.getElectricalMap();
+    static Map<ReadableStuff, Integer> readableMap = store.getReadableMap();
+    static Map<Shoe, Integer> shoesMap = store.getShoesMap();
     static UserDao userDao = UserDao.getInstance();
 
     public static void main(String[] args) {
-//        String command = getEnterCommand();
-//        switch (command) {
-//            case "1": //TODO
-//                break;
-//            case "2":
-//                User user = register();
-        getOrder(new User());
-//        }
+        String command = getEnterCommand();
+        switch (command) {
+            case "1": //TODO this is for current users
+                break;
+            case "2":
+                User user = register();
+        getOrder(user);
+        }
     }
 
     private static String getEnterCommand() {
@@ -80,7 +85,7 @@ public class Main {  //ask what exactly is the difference between static paramet
         return lastName;
     }
 
-    private static String getUserName() { //how can we throw and handle an exception without interrupting???
+    private static String getUserName() {
         System.out.println("please enter a user name:");
         String username = scanner.nextLine();
         User availableUser = userDao.search(username);
@@ -139,18 +144,17 @@ public class Main {  //ask what exactly is the difference between static paramet
     private static void showProducts() {
         System.out.println("**************");
         System.out.println("1-ELECTRICAL PRODUCTS:");
-        System.out.println(store.getElectricalMap());
+        System.out.println(electricalMap);
         System.out.println("**************");
         System.out.println("2-SHOES:");
-        System.out.println(store.getShoesMap());
+        System.out.println(shoesMap);
         System.out.println("**************");
         System.out.println("3-READABLE STUFFS:");
-        System.out.println(store.getReadableMap());
+        System.out.println(readableMap);
     }
 
     private static void getOrder(User user) {
         showPurchasingCommands();
-        main:
         while (true) {
             System.out.println("************");
             String command = scanner.nextLine();
@@ -158,28 +162,50 @@ public class Main {  //ask what exactly is the difference between static paramet
             if (command.equals("remove")) removeProduct(user);
             if (command.equals("show")) showCart(user);
             if (command.equals("cost")) PrintTotalCost(user);
-            if (command.equals("continue")) break main;
+            if (command.equals("continue"))
+                if (finalizePurchase(user)) return;
             if (command.equals("exit")) return;
         }
-        finalizePurchase(user);
     }
 
-    private static void finalizePurchase(User user) {
+    private static boolean finalizePurchase(User user) {
         Map<Product, Integer> userOrder = user.getCart();
         Product product;
-        Integer numberOfOrder;
-        for(Map.Entry<Product, Integer> userOrderEntry :userOrder.entrySet()){
+        int numberOfOrder;
+        for (Map.Entry<Product, Integer> userOrderEntry : userOrder.entrySet()) {
             product = userOrderEntry.getKey();
             numberOfOrder = userOrderEntry.getValue();
-            if (store.getElectricalMap().get(product)!=null) checkNumberOfStock(product, numberOfOrder);
-            if (store.getReadableMap().get(product)!=null) checkNumberOfStock(product, numberOfOrder);
-            if (store.getShoesMap().get(product)!=null) checkNumberOfStock(product, numberOfOrder);
+            if (!checkStock(product, numberOfOrder)) return false;
         }
+        // TODO this block should be synchronized
+        store.updateStock(userOrder);
         user.purchase();
+        showProducts(); //just for checking
+    return true;
     }
 
-    private static void checkNumberOfStock(Product product, Integer numberOfOrder) {
-        
+    private static boolean checkStock(Product product, int numberOfOrder) {
+        if (electricalMap.get(product) != null)
+            if (!isNumberOfStockOK(product, numberOfOrder, electricalMap)) return false;
+        if (readableMap.get(product) != null)
+            if (!isNumberOfStockOK(product, numberOfOrder, readableMap)) return false;
+        if (shoesMap.get(product) != null)
+            if (!isNumberOfStockOK(product, numberOfOrder, shoesMap)) return false;
+        return true;
+    }
+
+    private static boolean isNumberOfStockOK(Product product, int numberOfOrder, Map productMap) {
+        int stockNumber = (int) productMap.get(product);
+        if (stockNumber >= numberOfOrder) {
+            return true;
+        }
+        try {
+            throw new StockNumberException("** the stock number of " + product.getName()
+                    + " is :" + stockNumber + "\n pleas remove the extras **");
+        } catch (StockNumberException e) {
+            System.out.println(e.getMessage());
+        }
+        return false;
     }
 
     private static void PrintTotalCost(User user) {

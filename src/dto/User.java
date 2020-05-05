@@ -1,31 +1,15 @@
 package dto;
 
-import products.Product;
-
-import java.util.HashMap;
-import java.util.Map;
-
 public class User {
     private String firstName;
     private String lastName;
     private int phoneNumber;
     private String email;
     private String address; //TODO : rewrite it by Address class
-    private Map<Product, Integer> cart = new HashMap<>();
     private String userName;
     private String password;
 
     public User() {
-    }
-
-    public User(String firstName, String lastName, int phoneNumber, String email, String address, String userName, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.address = address;
-        this.userName = userName;
-        this.password = password;
     }
 
     public String getFirstName() {
@@ -84,36 +68,64 @@ public class User {
         this.password = password;
     }
 
-    public Map<Product, Integer> getCart() {
-        return cart;
-    }
+    public static class UserBuilder {
+        private String firstName;
+        private String lastName;
+        private int phoneNumber;
+        private String email;
+        private String address; //TODO : rewrite it by Address class
+        private String userName;
+        private String password;
 
-    public void addProduct(Product product) {
-        Integer number = cart.get(product);
-        if (number != null)
-            cart.put(product, number + 1);
-        else if (product != null) cart.put(product, 1);
-        System.out.println(cart);
-    }
+        public static UserBuilder aUser() {
+            return new UserBuilder();
+        }
 
-    public void removeProduct(Product product) {
-        System.out.println(cart);
-        Integer number = cart.get(product);
-        if (number != null)
-            if (number == 1) cart.remove(product);
-            else cart.put(product, number - 1);
-        System.out.println(cart);
-    }
+        public UserBuilder withFirstName(String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
 
-    public void purchase() {
-        //TODO
-        emptyCart();
-        System.out.println("purchasing is completed");
-        System.out.println("the cart is empty now!");
-    }
+        public UserBuilder withLastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
 
-    private void emptyCart() {
-        for (int i = 0; i < cart.size(); i++)
-            cart.remove(i);
+        public UserBuilder withPhoneNumber(int phoneNumber) {
+            this.phoneNumber = phoneNumber;
+            return this;
+        }
+
+        public UserBuilder withEmail(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public UserBuilder withAddress(String address) {
+            this.address = address;
+            return this;
+        }
+
+        public UserBuilder withUserName(String userName) {
+            this.userName = userName;
+            return this;
+        }
+
+        public UserBuilder withPassword(String password) {
+            this.password = password;
+            return this;
+        }
+
+        public User build() {
+            User user = new User();
+            user.setFirstName(firstName);
+            user.setLastName(lastName);
+            user.setEmail(email);
+            user.setAddress(address);
+            user.setPhoneNumber(phoneNumber);
+            user.setUserName(userName);
+            user.setPassword(password);
+            return user;
+        }
     }
 }

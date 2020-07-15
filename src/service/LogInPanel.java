@@ -1,5 +1,6 @@
 package service;
 
+import View.StoreManager;
 import data.dao.UserDao;
 import data.dto.User;
 import service.exception.InvalidUserPassException;
@@ -8,10 +9,9 @@ import service.exception.ReturnException;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-
 public class LogInPanel {
-    private Scanner scanner = new Scanner(System.in);
     private UserDao userDao;
+    private Scanner scanner = StoreManager.scanner;
 
     public LogInPanel(UserDao userDao) {
         this.userDao = userDao;
@@ -26,16 +26,6 @@ public class LogInPanel {
         if (user == null) throw new InvalidUserPassException("the user name is not correct");
         if (!user.getPassword().equals(password)) throw new InvalidUserPassException("wrong password");
         return user;
-    }
-
-    private void handleUserLogin(String userName) throws SQLException {
-        GetOrderPanel getOrderPanel = new GetOrderPanel();
-        getOrderPanel.getOrder(userName);
-    }
-
-    private void handleManagerLogin() throws SQLException {
-        ManagerPanel managerPanel = new ManagerPanel(userDao);
-        managerPanel.getCommand();
     }
 
     private String getInputString(String message) throws ReturnException {

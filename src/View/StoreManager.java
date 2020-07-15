@@ -1,22 +1,27 @@
 package View;
 
-import data.dao.UserDao;
 import data.dto.User;
-import service.exception.InvalidUserPassException;
-import service.exception.ReturnException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import service.GetOrderPanel;
 import service.LogInPanel;
 import service.ManagerPanel;
 import service.SignUpPanel;
+import service.exception.InvalidUserPassException;
+import service.exception.ReturnException;
 
 import java.sql.SQLException;
 import java.util.Scanner;
 
 public class StoreManager {
-    static Scanner scanner = new Scanner(System.in);
-    static UserDao userDao = new UserDao();
+    public static Scanner scanner = new Scanner(System.in);
+    public static ApplicationContext context = new AnnotationConfigApplicationContext(BeanConfig.class);
 
     public static void main(String[] args) {
+        getStart();
+    }
+
+    private static void getStart() {
         System.out.println("WELCOME!");
         try {
             User user = checkForSigningUp();
@@ -32,17 +37,17 @@ public class StoreManager {
 
     private static void handleManagerOrUserOrder(User user) throws SQLException {
         if (user.getUserName().equals("manager")) {
-            ManagerPanel managerPanel = new ManagerPanel(userDao);
+            ManagerPanel managerPanel = context.getBean("managerPanel", ManagerPanel.class);
             managerPanel.getCommand();
         } else {
-            GetOrderPanel getOrderPanel = new GetOrderPanel();
+            GetOrderPanel getOrderPanel = context.getBean("getOrderPanel", GetOrderPanel.class);
             getOrderPanel.getOrder(user.getUserName());
         }
     }
 
     private static User checkForLoggingIn(User user) throws InvalidUserPassException, ReturnException, SQLException {
         if (user == null) {
-            LogInPanel logInPanel = new LogInPanel(userDao);
+            LogInPanel logInPanel = context.getBean("logInPanel", LogInPanel.class);
             user = logInPanel.logeIn();
         }
         return user;
@@ -54,7 +59,7 @@ public class StoreManager {
         System.out.println("if not, enter something else");
         String input = scanner.nextLine().trim();
         if (input.equals("new")) {
-            SignUpPanel signUpPanel = new SignUpPanel();
+            SignUpPanel signUpPanel = context.getBean("signUpPanel", SignUpPanel.class);
             user = signUpPanel.signUp();
         }
         return user;

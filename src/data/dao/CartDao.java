@@ -10,7 +10,7 @@ import java.util.List;
 public class CartDao extends SharedDao {
     private String userName;
 
-    public CartDao(String userName) {
+    public void setUserName(String userName) {
         this.userName = userName;
     }
 
@@ -108,6 +108,7 @@ public class CartDao extends SharedDao {
                 "') as c join product on c.product_id = product.id)";
         getResultSetFromDB();
         while (resultSet.next()) {
+            System.out.println(resultSet.getString(3));
             productId = resultSet.getInt(2);
             if (productId >= 1000 && productId < 1500)
                 getTV(productId, productList);
@@ -135,7 +136,7 @@ public class CartDao extends SharedDao {
         magazine.setPrice(resultSet.getDouble(4));
         magazine.setCount(resultSet.getInt(1));
         query = "select mag.publisher_name, mag.publisher_number, mag.concessionaire, mag.type\n" +
-                "(product\n" +
+                "from (product\n" +
                 "join (select readable_stuffs.*, magazine.concessionaire, magazine.type FROM\n" +
                 "(readable_stuffs join magazine on readable_stuffs.id = magazine.id)" +
                 " where magazine.id = " + productId + ")  as mag on product.id = mag.id)";

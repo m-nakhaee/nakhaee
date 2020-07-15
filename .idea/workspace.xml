@@ -2,75 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91fcffc6-0bfa-48bd-80c3-df32b2f8af59" name="Default" comment="separation layers: view and service">
-      <change afterPath="$PROJECT_DIR$/src/data/dao/CartDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/dao/MyConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/dao/SharedDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/GetOrderPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ManagerPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/SignUpPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/UsefulMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/exception/InvalidInputException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/exception/InvalidUserPassException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysqlconnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/BeanConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/GetOrderPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/GetOrderPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/LogInPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/LogInPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/SignUpPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/SignUpPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/StoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/StoreManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/BookDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/CartDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dao/CartDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/Dao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/FormalShoesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/MagazineDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/MyConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dao/MyConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/RadioDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/SportShoesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/TVDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dto/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dto/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Magazine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dto/products/Magazine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dto/products/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/SportShoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/online shop/dto/products/SportShoes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/exception/RunOutOfProductException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetOrderPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogInPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/LogInPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUpPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StoreManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/BookDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CartDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/FormalShoesDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/MagazineDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/MyConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/RadioDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/SportShoesDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/TVDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/CityEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/CityEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/ProvinceEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/ProvinceEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/Electrical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/Electrical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/FormalShoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/FormalShoes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/FormalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/FormalType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/Magazine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/MagazineType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/MagazineType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/Radio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/RadioType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/RadioType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/ReadableStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/ReadableStuff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/Shoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/Shoes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/SportShoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/SportShoes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/SportType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/SportType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/TV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/TV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/products/TVType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/products/TVType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/ReturnException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/exception/ReturnException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/RunOutOfProductException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/StockNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/exception/StockNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/GetOrderPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/LogInPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/SignUpPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/StoreManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/CartDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/MyConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/CityEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/ProvinceEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Electrical.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/FormalShoes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/FormalType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Gender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Magazine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/MagazineType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Radio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/RadioType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/ReadableStuff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Shoes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/SportShoes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/SportType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/TV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/TVType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/exception/ReturnException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/online shop/exception/StockNumberException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/StoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StoreManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dao/CartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dao/CartDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/GetOrderPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/GetOrderPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/LogInPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/LogInPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ManagerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ManagerPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/SignUpPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/SignUpPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +56,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -112,11 +88,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
-    <option name="width" value="683" />
-    <option name="height" value="728" />
-  </component>
   <component name="ProjectId" id="1efnfsKzdO960TXz6za5nLE4zNZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -126,15 +97,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../online shop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.StoreManager">
@@ -224,8 +196,17 @@
       <workItem from="1590486004717" duration="3601000" />
       <workItem from="1590505585619" duration="2652000" />
       <workItem from="1590562084364" duration="12582000" />
-      <workItem from="1594721624893" duration="3824000" />
+      <workItem from="1594721624893" duration="6411000" />
+      <workItem from="1594797927300" duration="14637000" />
     </task>
+    <task id="LOCAL-00001" summary="separation layers: view and service">
+      <created>1594726717783</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594726717783</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,22 +217,58 @@
     <option name="LAST_COMMIT_MESSAGE" value="separation layers: view and service" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1594726048706">
+    <state x="163" y="0" key="#Project_Structure" timestamp="1594798795911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594726048706" />
-    <state x="135" y="0" key="CommitChangelistDialog2" timestamp="1594726604894">
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1594798795911" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1594815706673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="135" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594726604894" />
-    <state x="404" y="105" width="540" height="524" key="StructurePopup" timestamp="1594722025628">
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594815706673" />
+    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594816048175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="404" y="105" width="540" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1594722025628" />
-    <state x="738" y="111" key="extract.method.dialog" timestamp="1594726131143">
+    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1594816048175" />
+    <state x="135" y="0" key="CommitChangelistDialog2" timestamp="1594726711893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="738" y="111" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1594726131143" />
+    <state x="135" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594726711893" />
+    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1594816250912">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594816250912" />
+    <state width="1323" height="266" key="GridCell.Tab.0.bottom" timestamp="1594816891893">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="266" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594816891893" />
+    <state width="1323" height="266" key="GridCell.Tab.0.center" timestamp="1594816891893">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="266" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594816891893" />
+    <state width="1323" height="266" key="GridCell.Tab.0.left" timestamp="1594816891892">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="266" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594816891892" />
+    <state width="1323" height="266" key="GridCell.Tab.0.right" timestamp="1594816891893">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="266" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594816891893" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1594729592268">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594729592268" />
+    <state x="404" y="105" width="570" height="524" key="StructurePopup" timestamp="1594816925467">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="404" y="105" width="570" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1594816925467" />
+    <state x="738" y="111" key="extract.method.dialog" timestamp="1594734381883">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="738" y="111" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1594734381883" />
+    <state x="363" y="46" key="spring file set editor" timestamp="1594798826561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="46" key="spring file set editor/0.0.1366.728@0.0.1366.728" timestamp="1594798826561" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -263,79 +280,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>online shop</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

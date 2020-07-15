@@ -1,5 +1,6 @@
 package service;
 
+import View.StoreManager;
 import data.dao.UserDao;
 import data.dto.User;
 
@@ -10,10 +11,10 @@ import java.util.Scanner;
 
 public class ManagerPanel {
     private UserDao userDao;
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = StoreManager.scanner;
 
     public ManagerPanel(UserDao userDao) {
-    this.userDao = userDao;
+        this.userDao = userDao;
     }
 
     public void getCommand() throws SQLException {

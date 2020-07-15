@@ -1,5 +1,6 @@
 package service;
 
+import View.StoreManager;
 import data.dao.UserDao;
 import data.dto.User;
 import service.exception.InvalidInputException;
@@ -9,8 +10,12 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 public class SignUpPanel {
-    private UserDao userDao = new UserDao();
-    private Scanner scanner = new Scanner(System.in);
+    private UserDao userDao;
+    private Scanner scanner = StoreManager.scanner;
+
+    public SignUpPanel(UserDao userDao) {
+        this.userDao = userDao;
+    }
 
     public User signUp() throws ReturnException {
         System.out.println("fill information to sign up:");

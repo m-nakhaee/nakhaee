@@ -25,7 +25,7 @@ public class ProductDao extends SharedDao {
         query = "SELECT p.*, a.publisher_name, a.publisher_number, a.concessionaire, a.type FROM\n" +
                 "((SELECT * from product WHERE id = " + id + ") as p\n" +
                 " join \n" +
-                " (SELECT readable_stuffs.*, magazine.concessionaire, a.type from (readable_stuffs join magazine " +
+                " (SELECT readable_stuffs.*, magazine.concessionaire, magazine.type from (readable_stuffs join magazine " +
                 "on readable_stuffs.id = magazine.id))as a\n" +
                 " on p.id = a.id ) ";
         getResultSetFromDB();

@@ -1,20 +1,20 @@
 package service;
 
-import View.StoreManager;
 import data.dao.UserDao;
-import data.dto.User;
-import service.exception.InvalidInputException;
-import service.exception.ReturnException;
+import data.entity.User;
+import exception.InvalidInputException;
+import exception.ReturnException;
 
 import java.sql.SQLException;
 import java.util.Scanner;
 
 public class SignUpPanel {
-    private UserDao userDao;
-    private Scanner scanner = StoreManager.scanner;
+    private final UserDao userDao;
+    private final Scanner scanner;
 
-    public SignUpPanel(UserDao userDao) {
+    public SignUpPanel(UserDao userDao, Scanner scanner) {
         this.userDao = userDao;
+        this.scanner = scanner;
     }
 
     public User signUp() throws ReturnException {

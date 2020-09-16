@@ -1,51 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91fcffc6-0bfa-48bd-80c3-df32b2f8af59" name="Default" comment="separation layers: view and service">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysqlconnector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/BeanConfig.java" afterDir="false" />
+    <list default="true" id="91fcffc6-0bfa-48bd-80c3-df32b2f8af59" name="Default" comment="service bean creating by spring">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/hibernate_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/dao/LogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/entity/OperationLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enumPackage/OperationEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exception/ExitStoreException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exception/LogOutException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/StoreManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spring/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spring/config/properties.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysqlconnector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysqlconnector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spring_core.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/GetOrderPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/LogInPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/SignUpPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/StoreManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/CartDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/MyConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/Cart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/CityEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/ProvinceEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Electrical.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/FormalShoes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/FormalType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Magazine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/MagazineType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Radio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/RadioType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/ReadableStuff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/Shoes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/SportShoes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/SportType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/TV.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/dto/products/TVType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/exception/ReturnException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/online shop/exception/StockNumberException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/StoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StoreManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/BeanConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/StoreManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/dao/CartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dao/CartDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dao/MyConnection.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dao/SharedDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/CityEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumPackage/CityEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/ProvinceEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumPackage/ProvinceEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/Electrical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/Electrical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/FormalShoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/FormalShoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/FormalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumPackage/FormalType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumPackage/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/Magazine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/MagazineType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumPackage/MagazineType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/Radio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/RadioType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumPackage/RadioType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/ReadableStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/ReadableStuff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/Shoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/Shoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/SportShoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/SportShoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/SportType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumPackage/SportType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/TV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/entity/products/TV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dto/products/TVType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enumPackage/TVType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/GetOrderPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/GetOrderPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/LogInPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/LogInPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/ManagerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ManagerPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/SignUpPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/SignUpPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/UsefulMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/UsefulMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/exception/InvalidInputException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/InvalidInputException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/exception/InvalidUserPassException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/InvalidUserPassException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/exception/ReturnException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/ReturnException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/exception/StockNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/StockNumberException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,35 +64,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="spring-beans.schema" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>isNumber</find>
-      <find>Entry</find>
-      <find>store</find>
-      <find>book</find>
-      <find>Magazine</find>
-      <find>Book</find>
-      <find>return</find>
-      <find>cost</find>
-      <find>bill</find>
-      <find>replace</find>
-      <find>catch</find>
-      <find>phone</find>
-      <find>phon</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Magazine</replace>
-      <replace>magazine</replace>
-      <replace>Tv</replace>
-      <replace>SportShoes</replace>
-      <replace>Radio</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -97,29 +82,38 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../online shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HW21-airplaneReservation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.StoreManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marzieh\IdeaProjects\HWs\online shop-spring\src\spring\config" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="View.Main" />
       <module name="online shop" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StoreManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="View.StoreManager" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.Main" />
       <module name="online shop" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -148,13 +142,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.StoreManager" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StoreManager" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -197,7 +187,30 @@
       <workItem from="1590505585619" duration="2652000" />
       <workItem from="1590562084364" duration="12582000" />
       <workItem from="1594721624893" duration="6411000" />
-      <workItem from="1594797927300" duration="14637000" />
+      <workItem from="1594797927300" duration="15383000" />
+      <workItem from="1594819078831" duration="7000" />
+      <workItem from="1594819297745" duration="348000" />
+      <workItem from="1594857455711" duration="1023000" />
+      <workItem from="1594871532674" duration="2730000" />
+      <workItem from="1594886625124" duration="319000" />
+      <workItem from="1595067836687" duration="541000" />
+      <workItem from="1595068846253" duration="7092000" />
+      <workItem from="1595138556165" duration="15066000" />
+      <workItem from="1595254187416" duration="233000" />
+      <workItem from="1595255184647" duration="318000" />
+      <workItem from="1595335337924" duration="3152000" />
+      <workItem from="1595421650824" duration="5018000" />
+      <workItem from="1595429287560" duration="3441000" />
+      <workItem from="1595449301623" duration="474000" />
+      <workItem from="1595462450142" duration="249000" />
+      <workItem from="1595744642940" duration="11315000" />
+      <workItem from="1595793342756" duration="19839000" />
+      <workItem from="1595885031841" duration="4365000" />
+      <workItem from="1595889906789" duration="765000" />
+      <workItem from="1595919259391" duration="6644000" />
+      <workItem from="1595931506399" duration="1981000" />
+      <workItem from="1595939736732" duration="4594000" />
+      <workItem from="1596029900199" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="separation layers: view and service">
       <created>1594726717783</created>
@@ -206,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594726717783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="service bean creating by spring">
+      <created>1594817218517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594817218517</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,71 +234,109 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="separation layers: view and service" />
-    <option name="LAST_COMMIT_MESSAGE" value="separation layers: view and service" />
+    <MESSAGE value="service bean creating by spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="service bean creating by spring" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="633" y="240" width="401" height="218" key="#Assign_Data_Sources" timestamp="1595862439270">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="633" y="240" width="401" height="218" key="#Assign_Data_Sources/0.0.1366.728@0.0.1366.728" timestamp="1595862439270" />
+    <state x="309" y="42" key="#Inspections" timestamp="1595425432699">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="309" y="42" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1595425432699" />
     <state x="163" y="0" key="#Project_Structure" timestamp="1594798795911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1594798795911" />
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1594815706673">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595429840032">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594815706673" />
-    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594816048175">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1595429840032" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1595932956729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1594816048175" />
-    <state x="135" y="0" key="CommitChangelistDialog2" timestamp="1594726711893">
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1595932956729" />
+    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595429838173">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="135" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594726711893" />
-    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1594816250912">
+    <state x="412" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1595429838173" />
+    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595745162239">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594816250912" />
-    <state width="1323" height="266" key="GridCell.Tab.0.bottom" timestamp="1594816891893">
+    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1595745162239" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595887380495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594816891893" />
-    <state width="1323" height="266" key="GridCell.Tab.0.center" timestamp="1594816891893">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1595887380495" />
+    <state x="135" y="0" key="CommitChangelistDialog2" timestamp="1594817214392">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594816891893" />
-    <state width="1323" height="266" key="GridCell.Tab.0.left" timestamp="1594816891892">
+    <state x="135" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594817214392" />
+    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1596030019770">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594816891892" />
-    <state width="1323" height="266" key="GridCell.Tab.0.right" timestamp="1594816891893">
+    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596030019770" />
+    <state width="1323" height="287" key="GridCell.Tab.0.bottom" timestamp="1595933540202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594816891893" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1594729592268">
+    <state width="1317" height="115" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1595872932653" />
+    <state width="1323" height="287" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595933540202" />
+    <state width="1323" height="287" key="GridCell.Tab.0.center" timestamp="1595933540202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594729592268" />
-    <state x="404" y="105" width="570" height="524" key="StructurePopup" timestamp="1594816925467">
+    <state width="1317" height="115" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1595872932653" />
+    <state width="1323" height="287" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595933540202" />
+    <state width="1323" height="287" key="GridCell.Tab.0.left" timestamp="1595933540202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="404" y="105" width="570" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1594816925467" />
-    <state x="738" y="111" key="extract.method.dialog" timestamp="1594734381883">
+    <state width="1317" height="115" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1595872932652" />
+    <state width="1323" height="287" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595933540202" />
+    <state width="1323" height="287" key="GridCell.Tab.0.right" timestamp="1595933540202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="738" y="111" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1594734381883" />
+    <state width="1317" height="115" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1595872932653" />
+    <state width="1323" height="287" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595933540202" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1595926227137">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595926227137" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1595926227137">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1595926227137" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1595926227137">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1595926227137" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1595926227137">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1595926227137" />
+    <state x="498" y="297" key="ReplaceDuplicatesPrompt" timestamp="1595154145880">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="498" y="297" key="ReplaceDuplicatesPrompt/0.0.1366.728@0.0.1366.728" timestamp="1595154145880" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1595931723547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595931723547" />
+    <state x="404" y="105" width="570" height="524" key="StructurePopup" timestamp="1595430094766">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="404" y="105" width="570" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1595430094766" />
+    <state x="815" y="168" key="extract.method.dialog" timestamp="1595761303326">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="815" y="168" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1595761303326" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595795159940">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595795159940" />
     <state x="363" y="46" key="spring file set editor" timestamp="1594798826561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="46" key="spring file set editor/0.0.1366.728@0.0.1366.728" timestamp="1594798826561" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/data/dao/UserDao.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

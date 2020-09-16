@@ -8,6 +8,15 @@
         </fileset>
       </configuration>
     </facet>
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <datasource-mapping>
+          <factory-entry name="online shop" />
+        </datasource-mapping>
+        <naming-strategy-map />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -25,8 +34,9 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="mysqlconnector" level="project" />
-    <orderEntry type="library" name="spring-core" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="mysqlconnector" level="project" />
+    <orderEntry type="library" name="jul-to-slf4j-1.7.30" level="project" />
+    <orderEntry type="library" name="hibernate-2.7.7" level="project" />
   </component>
 </module>

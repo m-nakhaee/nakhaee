@@ -1,35 +1,36 @@
 package service;
 
-import View.StoreManager;
 import data.dao.CartDao;
 import data.dao.ProductDao;
-import data.dto.products.Product;
-import service.exception.ReturnException;
-import service.exception.StockNumberException;
+import enumPackage.OperationEnum;
+import data.entity.products.Product;
+import exception.LogOutException;
+import exception.ReturnException;
+import exception.StockNumberException;
 
-import java.sql.SQLException;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
 public class GetOrderPanel {
-    private ProductDao productDao;
-    private CartDao cartDao;
-    private Scanner scanner = StoreManager.scanner;
+    private final ProductDao productDao;
+    private final CartDao cartDao;
+    private final Scanner scanner;
 
-    public GetOrderPanel(ProductDao productDao, CartDao cartDao) {
+    public GetOrderPanel(ProductDao productDao, CartDao cartDao, Scanner scanner) {
         this.productDao = productDao;
         this.cartDao = cartDao;
+        this.scanner = scanner;
     }
 
-    public void getOrder(String userName) throws SQLException {
+    public void getOrder(String userName) throws LogOutException {
         showProducts();
         showPurchasingCommands();
         cartDao.setUserName(userName);
         getPurchasingCommand();
     }
 
-    private void getPurchasingCommand() {
+    private void getPurchasingCommand() throws LogOutException {
         while (true) {
             System.out.println("****** enter a command ******");
             String command = scanner.nextLine();
@@ -56,10 +57,10 @@ public class GetOrderPanel {
                 }
                 if (command.equals("continue")) {
                     finalizePurchase();
-                    break;
+                    continue;
                 }
-                if (command.equals("exit")) break;
-            } catch (StockNumberException | SQLException | ReturnException e) {
+                if (command.equals("log out")) throw new LogOutException("goodBye");
+            } catch (StockNumberException | ReturnException e) {
                 System.out.println(e.getMessage());
                 continue;
             }
@@ -67,25 +68,25 @@ public class GetOrderPanel {
         }
     }
 
-    private void showSortedCart() throws SQLException {
+    private void showSortedCart() {
         List<Product> products = cartDao.getProducts();
         Comparator<Product> comparator = (p1, p2) -> p1.getPrice() < p2.getPrice() ? -1 : 1;
         products.stream().sorted(comparator).forEach(System.out::println);
     }
 
-    private void showProducts() throws SQLException {
+    private void showProducts() {
         System.out.println(productDao.getAllProducts());
     }
 
-    private void showBill() throws SQLException {
+    private void showBill() {
         System.out.println("total cost of your bill: " + cartDao.getTotalCost());
     }
 
-    private void showCart() throws SQLException {
+    private void showCart() {
         System.out.println(cartDao.getProducts());
     }
 
-    private void addProduct() throws ReturnException, SQLException {
+    private void addProduct() throws ReturnException {
         System.out.println("enter \'return' to return");
         int productId = getId();
         Product product = productDao.search(productId);
@@ -95,15 +96,17 @@ public class GetOrderPanel {
             product = productDao.search(productId);
         }
         cartDao.addToCart(product.getId());
+        UsefulMethods.recordLog(OperationEnum.addToCart, cartDao.getUserName());
     }
 
-    private void removeProduct() throws ReturnException, SQLException {
+    private void removeProduct() throws ReturnException {
         System.out.println("enter \'return' to return");
         int productId = getId();
         while (!cartDao.removeFromCart(productId)) {
             System.out.println("-- this is not in your Cart --");
             productId = getId();
         }
+        UsefulMethods.recordLog(OperationEnum.removeFromCart, cartDao.getUserName());
     }
 
     private int getId() throws ReturnException {
@@ -120,13 +123,13 @@ public class GetOrderPanel {
         System.out.println("\"add\" --> add a product to your cart");
         System.out.println("\"remove\" --> remove a product from to your cart");
         System.out.println("\"show cart\" --> show your cart");
-        System.out.println("\"show cart\" --> show your sorted cart by product price");
+        System.out.println("\"show sorted cart\" --> show your sorted cart by product price");
         System.out.println("\"show bill\" --> show total cost of your cart");
         System.out.println("\"continue\" --> finalize the purchase");
-        System.out.println("\"exit\" --> exit the store");
+        System.out.println("\"log out\" --> log out from the the store");
     }
 
-    private void finalizePurchase() throws SQLException, StockNumberException, ReturnException {
+    private void finalizePurchase() throws StockNumberException, ReturnException {
         List<Product> orderedProducts = cartDao.getProducts();
         if (orderedProducts.isEmpty()) throw new ReturnException("the cart is empty");
         checkWarehouseInventory(orderedProducts);
@@ -135,10 +138,11 @@ public class GetOrderPanel {
         showBill();
         emptyCart();
         System.out.println("\nthanks for purchasing");
+        UsefulMethods.recordLog(OperationEnum.purchase, cartDao.getUserName());
     }
 
     private void checkWarehouseInventory(List<Product> orderedProducts)
-            throws SQLException, StockNumberException {
+            throws StockNumberException {
         for (Product orderedProduct : orderedProducts) {
             int id = orderedProduct.getId();
             Product product = productDao.search(id);
@@ -150,7 +154,7 @@ public class GetOrderPanel {
         }
     }
 
-    private void emptyCart() throws SQLException {
+    private void emptyCart() {
         cartDao.emptyCart();
     }
 
